@@ -1,0 +1,114 @@
+.card {
+  a.modal-trigger {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0;
+
+    img {
+      //content: '';
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: .4s all;
+      background: radial-gradient(black, #1a98753d);
+    }
+
+    &:hover:after {
+      background: radial-gradient(black, rgba(22, 170, 117, .4));
+    }
+
+
+    .title-block {
+      font-size: 20px;
+      font-weight: 700;
+      bottom: 0;
+      position: absolute;
+      z-index: 2;
+      transition: cubic-bezier(1, 0.22, 0, 1.57) 0.3s;
+      padding-left: 15px;
+    }
+
+  }
+
+  .rating-starts{
+    height: 35px;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .modal-view-gallery {
+    min-height: 500px;
+    border-radius: 20px;
+    background: url("../../../assets/images/modal-background.jpg") no-repeat center;
+    background-size: cover;
+
+    .modal-header {
+      text-align: right;
+      height: 50px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: rgba(0, 0, 0, .7);
+      width: 100%;
+
+      .modal-close {
+        font-size: 55px;
+        color: #757575;
+        font-weight: 500;
+        height: 100%;
+        width: 60px;
+        line-height: 45px;
+        margin-right: 10px;
+        &:hover{
+          color: #ffffff;
+        }
+      }
+    }
+    .modal-content{
+      padding: 55px 20px;
+      height: 500px;
+    }
+    .modal-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, .7);
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .modal-footer-link{
+        font-size: 22px;
+        font-weight: 500;
+        color: #ffffff;
+        height: 100%;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        transition: all .4s;
+        &:hover{
+          background: rgba(255, 255, 255, .6);
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+

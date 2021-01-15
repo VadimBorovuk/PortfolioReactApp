@@ -1,0 +1,106 @@
+.timeline-block {
+  .timeline-block-title {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .timeline-blocks-info {
+    position: relative;
+
+    .timeline-point {
+      margin-bottom: 15px;
+      position: relative;
+
+      .timeline-description {
+        position: relative;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 9px 9px 9px 0;
+          border-color: transparent #f2f3f7 transparent transparent;
+          left: 0;
+          top: 10px;
+          margin-left: -9px;
+        }
+
+      }
+
+      .timeline-block-end {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        background-color: #616161;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+      }
+
+      &:last-child{
+        .timeline-block-end{
+          display: block;
+        }
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 4px;
+      background: #f2f3f7;
+      top: 20px;
+      bottom: 20px;
+      margin-left: 30px;
+      z-index: -1;
+    }
+
+    .timeline-point {
+      .timeline-icon {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0 0 0 5px #f2f3f7;
+        line-height: 35px;
+        float: left;
+        margin-left: 15px;
+      }
+    }
+
+    .timeline-description {
+      padding: 1.5em;
+      min-height: 250px;
+      background: #f2f3f7;
+      margin-left: 70px;
+
+      .description-position-date {
+        margin: 0 0 20px;
+        display: flex;
+        align-items: center;
+
+        .description-position {
+          font-size: 24px;
+          color: #000000;
+          margin-right: 20px;
+          text-transform: uppercase;
+          text-decoration: underline;
+        }
+
+        .description-date {
+          font-size: 18px;
+          color: #808080;
+        }
+      }
+    }
+  }
+}

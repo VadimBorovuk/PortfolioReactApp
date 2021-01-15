@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "title": "Title 1",
+    "stars": 2,
+    "preview": "https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg",
+    "description": {
+      "titleDesc": "title desc 2",
+      "textDesc": "text desc 2",
+      "skillsDesc": "skills desc 2"
+    },
+    "link": {
+      "demo": "https://github.com/VadimBorovuk/shopping-cart",
+      "code": "https://shopping-books-77c1a.web.app/"
+    }
+  }
+]

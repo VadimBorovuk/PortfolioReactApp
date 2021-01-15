@@ -1,0 +1,25 @@
+.content-projects{
+
+  .desc-cards{
+    .cards{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .card{
+        &.col-4{
+          width: 250px;
+          height: 190px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .rating-block{
+    text-align: center;
+    label{
+      color: #e5b10f;
+      font-size: 1.8rem;
+    }
+  }
+}

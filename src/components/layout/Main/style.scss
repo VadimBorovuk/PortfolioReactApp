@@ -1,0 +1,64 @@
+.main-block {
+  font-family: 'Quicksand', sans-serif;
+  background: url("../../../assets/images/business.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 850px;
+  position: relative;
+
+  /*slick slider*/
+  .slick-slider{
+    min-height: 100vh;
+  }
+  .slider-text-inner {
+    padding: 2.5em;
+
+    .desc {
+      h1 {
+        font-size: 46px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+
+      .btn-learn {
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid #fff;
+        display: inline-block;
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    z-index: 10;
+
+    &.slick-prev {
+      left: 8px;
+    }
+
+    &.slick-next {
+      right: 8px;
+    }
+  }
+  .slick-list{
+    z-index: 9;
+  }
+  .slick-next:before, .slick-prev:before {
+    color: #000000;
+  }
+
+  .slick-dots {
+    bottom: -10px;
+    z-index: 10;
+  }
+
+  .slick-dots li button:before {
+    font-size: 12px;
+  }
+}

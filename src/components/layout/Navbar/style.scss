@@ -1,0 +1,218 @@
+.navbar-view {
+  padding-top: 1em;
+  padding-bottom: 40px;
+  float: left;
+  width: 400px;
+  z-index: 1;
+  background: url("../../../assets/images/navbar-toolbar.jpg") center repeat-y;
+  background-size: cover;
+
+  .text-center {
+    .author-logo {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      margin: 10px auto;
+      background: url('../../../assets/images/image.jpg');
+      background-size: cover;
+    }
+
+    .author-fullInfo {
+      p {
+        margin: 0;
+        text-align: center;
+      }
+
+      .author-fullName {
+        font-family: 'Quicksand', sans-serif;
+        //font-family: 'Playfair Display', serif;
+        font-size: 26px;
+        color: #ffffff;
+        text-decoration: underline;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      .author-email {
+        font-size: 16px;
+        color: #dbcfcf;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 180px;
+    background-color: transparent;
+    box-shadow: none;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: transparent;
+      box-shadow: none;
+      list-style: none;
+      text-align: center;
+
+      li {
+        display: inline-block;
+
+        .nav-link {
+          font-size: 16px;
+          height: 40px;
+          line-height: 40px;
+          position: relative;
+          display: block;
+          padding: 0;
+          text-decoration: none;
+          color: #fff;
+          font-weight: 500;
+          text-transform: uppercase;
+          margin: 0 10px;
+          transition: all .5s;
+
+          &:hover {
+            color: #fff;
+            background-color: transparent;
+          }
+
+          &:after, &:before {
+            transition: all .5s;
+          }
+
+          &.active:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1.5px;
+            background-color: #fff;
+          }
+        }
+        .active-link{
+          color: #b3e811f5;
+        }
+      }
+    }
+  }
+
+  .author-links {
+    display: flex;
+    flex-direction: column;
+
+    .author-link {
+      margin: 10px auto;
+      font-family: 'Quicksand', sans-serif;
+
+      a {
+        color: #ffffff;
+        font-size: 23px;
+
+        .fab {
+          transition: .3s all;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+
+  .downResume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    width: 140px;
+    margin: 0 auto;
+    height: 35px;
+    font-weight: 500;
+    transition: all .4s;
+
+    &:hover {
+      background: rgba(0, 0, 0, .5);
+    }
+
+    .fa-file {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+  content: '.';
+  color: transparent;
+  background: #fff;
+  height: 2px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}

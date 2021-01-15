@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "keyword": "Frontend",
+    "points": [
+      {
+        "id": 10,
+        "point": "HTML5",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/732/732212.svg",
+        "scale": 40
+      },
+      {
+        "id": 11,
+        "point": "CSS3",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/732/732190.svg",
+        "scale": 20
+      },
+      {
+        "id": 12,
+        "point": "Bootstrap",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+        "scale": 30
+      },
+      {
+        "id": 13,
+        "point": "JavaScript",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/919/919828.svg",
+        "scale": 65
+      },
+      {
+        "id": 14,
+        "point": "ReactJS",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/919/919851.svg",
+        "scale": 40
+      },
+      {
+        "id": 15,
+        "point": "VueJS",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "keyword": "Backend",
+    "points": [
+      {
+        "id": 20,
+        "point": "NodeJS",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/919/919825.svg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "keyword": "Version Control",
+    "points": [
+      {
+        "id": 30,
+        "point": "GIT",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "keyword": "Database",
+    "points": [
+      {
+        "id": 40,
+        "point": "MongoDB",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
+      },
+      {
+        "id": 41,
+        "point": "MySQL",
+        "icon": "https://cdn.worldvectorlogo.com/logos/mysql.svg"
+      }
+    ]
+  },
+
+  {
+    "id": 5,
+    "keyword": "Hosting platforms",
+    "points": [
+      {
+        "id": 50,
+        "point": "Git Hub",
+        "icon": "https://www.flaticon.com/svg/static/icons/svg/2111/2111425.svg"
+      },
+      {
+        "id": 51,
+        "point": "FireBase",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
+      }
+    ]
+  }
+]

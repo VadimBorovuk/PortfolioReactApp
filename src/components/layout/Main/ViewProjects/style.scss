@@ -1,0 +1,13 @@
+.desc {
+  position: relative;
+  z-index: 99990;
+}
+
+.btn-learn {
+  cursor: pointer;
+  transition: all .4s;
+
+  &:hover {
+    background: rgba(0, 0, 0, .6);
+  }
+}

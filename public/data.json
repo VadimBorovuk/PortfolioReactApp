@@ -1,0 +1,136 @@
+[
+  {
+    "projectsData": [
+      {
+        "id": 1,
+        "title": "Title 1",
+        "stars": 4,
+        "preview": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-qCdv9ezPtGFoPcqzNIugDnEaGMatXLasw&usqp=CAU",
+        "description": {
+          "titleDesc": "title desc 22",
+          "textDesc": "text desc 22",
+          "skillsDesc": "skills desc 22"
+        },
+        "link": {
+          "demo": "https://github.com/VadimBorovuk/shopping-cart",
+          "code": "https://shopping-books-77c1a.web.app/"
+        }
+      }
+    ],
+    "skillsData": [
+      {
+        "id": 2,
+        "keyword": "Frontend",
+        "points": [
+          {
+            "id": 20,
+            "point": "HTML5",
+            "icon": "https://www.flaticon.com/svg/static/icons/svg/732/732212.svg"
+          },
+          {
+            "id": 21,
+            "point": "CSS3",
+            "icon": "https://www.flaticon.com/svg/static/icons/svg/732/732190.svg"
+          },
+          {
+            "id": 22,
+            "point": "Bootstrap",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+          },
+          {
+            "id": 23,
+            "point": "JavaScript",
+            "icon": "https://www.flaticon.com/svg/static/icons/svg/919/919828.svg"
+          },
+          {
+            "id": 24,
+            "point": "ReactJS",
+            "icon": "https://www.flaticon.com/svg/static/icons/svg/919/919851.svg"
+          },
+          {
+            "id": 25,
+            "point": "VueJS",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "keyword": "Backend",
+        "points": [
+          {
+            "id": 30,
+            "point": "NodeJS",
+            "icon": "https://www.flaticon.com/svg/static/icons/svg/919/919825.svg"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "keyword": "Version Control",
+        "points": [
+          {
+            "id": 40,
+            "point": "GIT",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "keyword": "Database",
+        "points": [
+          {
+            "id": 50,
+            "point": "MongoDB",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
+          },
+          {
+            "id": 51,
+            "point": "MySQL",
+            "icon": "https://cdn.worldvectorlogo.com/logos/mysql.svg"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "keyword": "Hosting platforms",
+        "points": [
+          {
+            "id": 60,
+            "point": "Git Hub",
+            "icon": "https://www.flaticon.com/svg/static/icons/svg/2111/2111425.svg"
+          },
+          {
+            "id": 61,
+            "point": "FireBase",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
+          }
+        ]
+      }
+    ],
+    "timelineData": [
+      {
+        "id": 7,
+        "position": "frontend courses",
+        "dateStarted": "2018-2019",
+        "description": "destiny HTML",
+        "colorStyle": "#26e730"
+      },
+      {
+        "id": 8,
+        "position": "Junior Frontend / HTML Coder",
+        "dateStarted": "2019-2020",
+        "description": "destiny HTML",
+        "colorStyle": "#2c98f0"
+      },
+      {
+        "id": 9,
+        "position": "Frontend Developer (React.js, Vue.js, Angular.js)",
+        "dateStarted": "2020-2021",
+        "description": "destiny REACT",
+        "colorStyle": "#e17608"
+      }
+    ]
+  }
+]
