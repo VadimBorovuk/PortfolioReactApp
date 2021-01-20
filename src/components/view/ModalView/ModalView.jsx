@@ -25,7 +25,7 @@ class Modal extends Component {
     render() {
         const {id, stars, title, description, preview, link} = this.props;
         return (
-            <div className="card col-4">
+            <div className="card col-4 card-rating">
                 <a className="btn modal-trigger" data-target={`modal-view-${id}`}>
                     <img src={preview} alt="preview"/>
                     <p className="title-block">{title}</p>
@@ -45,9 +45,12 @@ class Modal extends Component {
                         </a>
                     </div>
                     <div className="modal-content">
-                        <h4>{description.titleDesc}</h4>
-                        <p>{description.textDesc}</p>
-                        <span>{description.skillsDesc}</span>
+                        <h4 className="desc-title">{description.titleDesc}</h4>
+                        <p className="desc-text">{description.textDesc}</p>
+                        <ul className="desc-lists">
+                            <p>Skills:</p>
+                            {description.skillsDesc && description.skillsDesc.map(skill => <li className="desc-list">{skill.item}</li>)}
+                        </ul>
                     </div>
                     <div className="modal-footer">
                         <a className="modal-footer-link" target="_blank" href={link.code}>show code</a>

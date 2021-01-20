@@ -3,10 +3,11 @@
   padding-bottom: 40px;
   float: left;
   width: 400px;
-  z-index: 1;
   background: url("../../../assets/images/navbar-toolbar.jpg") center repeat-y;
   background-size: cover;
-
+  z-index: 1;
+  //z-index: 99999;
+  //position: relative;
   .text-center {
     .author-logo {
       height: 200px;
@@ -48,7 +49,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 180px;
+    min-height: 130px;
     background-color: transparent;
     box-shadow: none;
 
@@ -99,7 +100,10 @@
           }
         }
         .active-link{
-          color: #b3e811f5;
+          color: #1af6e1;
+          font-weight: bold;
+          font-size: 18px;
+          letter-spacing: 1px;
         }
       }
     }
@@ -108,6 +112,7 @@
   .author-links {
     display: flex;
     flex-direction: column;
+    margin-top: 0;
 
     .author-link {
       margin: 10px auto;
@@ -116,12 +121,12 @@
       a {
         color: #ffffff;
         font-size: 23px;
-
         .fab {
           transition: .3s all;
 
           &:hover {
             transform: scale(1.2);
+            filter: drop-shadow(2px 4px 6px black);
           }
         }
       }
@@ -144,6 +149,7 @@
 
     &:hover {
       background: rgba(0, 0, 0, .5);
+      cursor: pointer;
     }
 
     .fa-file {

@@ -3,7 +3,6 @@ import React, {useEffect, useState} from 'react';
 import Button from '@material-ui/core/Button';
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
-import {Redirect} from "react-router-dom";
 
 function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -19,6 +18,9 @@ const FormSend = () => {
     const [open, setOpen] = useState(false);
 
     const handleClick = (e) => {
+
+
+
         setOpen(true);
         e.preventDefault()
         setName('')

@@ -5,7 +5,7 @@ import {Animated} from "react-animated-css";
 import ButtonSend from "../../view/ButtonSend/ButtonSend";
 
 import './style.scss'
-
+import ShowResume from "../../view/ShowResume/ShowResume";
 
 const Navbar = () => {
     return (
@@ -34,7 +34,6 @@ const Navbar = () => {
                             <NavLink to="/skills" className="nav-link" activeClassName="active-link">Skills</NavLink>
                         </li>
                     </ul>
-                    <ButtonSend/>
                 </nav>
             </Animated>
 
@@ -44,11 +43,8 @@ const Navbar = () => {
                     <li className="author-link"><a href="https://github.com/VadimBorovuk" target="_blank"><i className="fab fa-github"></i></a></li>
                     <li className="author-link"><a href="https://www.linkedin.com/in/vadimborovyk" target="_blank"><i className="fab fa-linkedin"></i></a></li>
                 </ul>
-
-                <a className="downResume" href="#check-resume">
-                    <i className="far fa-file"></i>
-                    save resume
-                </a>
+                <ButtonSend/>
+                <ShowResume/>
             </Animated>
         </div>
     );

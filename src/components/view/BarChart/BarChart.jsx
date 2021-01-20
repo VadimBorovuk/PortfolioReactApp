@@ -1,17 +1,17 @@
-import React, { useEffect, useRef } from 'react'
-import { select } from 'd3-selection'
-import { max } from 'd3-array'
-import { scaleLinear, scaleBand } from 'd3-scale'
-import { axisLeft, axisBottom } from 'd3-axis'
+import React, {useEffect, useRef} from 'react'
+import {select} from 'd3-selection'
+import {max} from 'd3-array'
+import {scaleLinear, scaleBand} from 'd3-scale'
+import {axisLeft, axisBottom} from 'd3-axis'
 
 // margin convention often used with D3
-const margin = { top: 80, right: 60, bottom: 80, left: 60 }
+const margin = {top: 80, right: 60, bottom: 80, left: 60}
 const width = 600 - margin.left - margin.right
 const height = 400 - margin.top - margin.bottom
 
-const color = ['#f05440', '#d5433d', '#b33535', '#283250']
+const color = ['#58de10', '#10c65a', '#13afe0', '#13afe0', '#0a6fe8']
 
-const BarChart = ({ data }) => {
+const BarChart = ({data}) => {
     const d3svg = useRef(null)
 
     useEffect(() => {
@@ -51,7 +51,7 @@ const BarChart = ({ data }) => {
                 .attr('y', d => yScale(d.genre))
                 .attr('width', d => xScale(d.revenue))
                 .attr('height', yScale.bandwidth())
-                .style('fill', function(d, i) {
+                .style('fill', function (d, i) {
                     return color[i % 4] // use colors in sequence
                 })
 

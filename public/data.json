@@ -3,17 +3,259 @@
     "projectsData": [
       {
         "id": 1,
-        "title": "Title 1",
-        "stars": 4,
-        "preview": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp-qCdv9ezPtGFoPcqzNIugDnEaGMatXLasw&usqp=CAU",
+        "title": "SPA site on React",
+        "stars": 3,
+        "preview": "https://web24.pro/mediafiless/uploads/2020/06/dsc_0773-1.jpg",
         "description": {
-          "titleDesc": "title desc 22",
-          "textDesc": "text desc 22",
-          "skillsDesc": "skills desc 22"
+          "titleDesc": "SPA site on React",
+          "textDesc": "React-Redux technologies were used for the business card site, as well as for the weather forecast, where you can find out the temperature, pressure and position of the Sun.",
+          "skillsDesc": [
+            {
+              "id": 111,
+              "item": "React"
+            },
+            {
+              "id": 112,
+              "item": "Redux"
+            },
+            {
+              "id": 113,
+              "item": "Weahter API"
+            },
+            {
+              "id": 114,
+              "item": "Es6"
+            }
+          ]
         },
         "link": {
-          "demo": "https://github.com/VadimBorovuk/shopping-cart",
-          "code": "https://shopping-books-77c1a.web.app/"
+          "demo": "https://site-info-5fbb5.firebaseapp.com",
+          "code": "https://github.com/VadimBorovuk/SiteInfo"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Internet magazine at React & Redux",
+        "stars": 4,
+        "preview": "https://fabrika-it.ru/images/shop1.jpg",
+        "description": {
+          "titleDesc": "Internet magazine at React & Redux",
+          "textDesc": "In this work, an online store for buy books. We can search , add to cart, and sort books by author, price low or high",
+          "skillsDesc": [
+            {
+              "id": 121,
+              "item": "React"
+            },
+            {
+              "id": 122,
+              "item": "Redux"
+            },
+            {
+              "id": 123,
+              "item": "Jsx"
+            },
+            {
+              "id": 124,
+              "item": "Es6"
+            }
+          ]
+        },
+        "link": {
+          "demo": "https://shopping-books-77c1a.web.app/",
+          "code": "https://github.com/VadimBorovuk/shopping-cart"
+        }
+      },
+      {
+        "id": 3,
+        "title": "App on Vue.js",
+        "stars": 4,
+        "preview": "https://proceedinteractive.com/wp-content/uploads/2017/10/Mobile-App-Development.png",
+        "description": {
+          "titleDesc": "App on Vue.js",
+          "textDesc": "tIn this work, technologies such as Vue.js were used to make payments in the online game, GSAP, for animations and Pug, for component layout.",
+          "skillsDesc": [
+            {
+              "id": 131,
+              "item": "Vue.js"
+            },
+            {
+              "id": 132,
+              "item": "GSAP"
+            },
+            {
+              "id": 133,
+              "item": "Pug"
+            },
+            {
+              "id": 134,
+              "item": "SCSS"
+            }
+          ]
+        },
+        "link": {
+          "demo": "https://vavilon-smartphone-fleec-e05ad.web.app/",
+          "code": "https://vavilon-smartphone-fleec-e05ad.web.app/"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Dashboard video app on Vue.js",
+        "stars": 4,
+        "preview": "https://ps.w.org/gallery-videos/assets/screenshot-12.png?rev=1690581",
+        "description": {
+          "titleDesc": "Dashboard video app on Vue.js",
+          "textDesc": "In this work, technologies such as Vue.js were used for display video panel, which can be filtered by list. Search by video title. Change the display type to grid and tile.",
+          "skillsDesc": [
+            {
+              "id": 141,
+              "item": "Vue.js"
+            },
+            {
+              "id": 142,
+              "item": "Vuex"
+            },
+            {
+              "id": 143,
+              "item": "SCSS"
+            }
+          ]
+        },
+        "link": {
+          "demo": "https://vuefiltermenu.web.app/",
+          "code": "https://github.com/VadimBorovuk/VueFilterMenu"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Calendar on React.js",
+        "stars": 3,
+        "preview": "https://i.morioh.com/2020/04/29/faaf0aa73c24.jpg",
+        "description": {
+          "titleDesc": "Calendar on React.js",
+          "textDesc": "In this work, React-Redux was used to display the main page where the calendar is displayed, to obtain the date of the month and day that was selected.",
+          "skillsDesc": [
+            {
+              "id": 151,
+              "item": "React.js"
+            },
+            {
+              "id": 152,
+              "item": "Redux"
+            },
+            {
+              "id": 153,
+              "item": "SCSS"
+            },
+            {
+              "id": 154,
+              "item": "Moment.js"
+            }
+          ]
+        },
+        "link": {
+          "demo": "https://react-calendar-d1538.web.app",
+          "code": "https://github.com/VadimBorovuk/React-calendar"
+        }
+      },
+      {
+        "id": 6,
+        "title": "Modal on React.js",
+        "stars": 3,
+        "preview": "https://cdn.auth0.com/blog/illustrations/react.png",
+        "description": {
+          "titleDesc": "Modal on React.js",
+          "textDesc": "tIn this work, technologies such as Vue.js were used to make payments in the online game, GSAP, for animations and Pug, for component layout.",
+          "skillsDesc": [
+            {
+              "id": 161,
+              "item": "React.js"
+            },
+            {
+              "id": 162,
+              "item": "Ant"
+            },
+            {
+              "id": 163,
+              "item": "SCSS"
+            }
+          ]
+        },
+        "link": {
+          "demo": "https://react-todo-618ac.web.app/",
+          "code": "https://github.com/VadimBorovuk/ReactModal"
+        }
+      },
+
+      {
+        "id": 7,
+        "title": "Dashboard Vue.js",
+        "stars": 4,
+        "preview": "https://vuejsexamples.com/content/images/2018/11/homepage.png",
+        "description": {
+          "titleDesc": "Dashboard Vue.js",
+          "textDesc": "In this work, a map and a list of cards that can be added to the favorites tab are displayed. Also filter by publication date",
+          "skillsDesc": [
+            {
+              "id": 171,
+              "item": "Vue.js"
+            },
+            {
+              "id": 172,
+              "item": "Vuex"
+            },
+            {
+              "id": 173,
+              "item": "Google Maps"
+            },
+            {
+              "id": 174,
+              "item": "SCSS"
+            }
+          ]
+        },
+        "link": {
+          "demo": "https://vue-trips-layout.web.app",
+          "code": "https://github.com/VadimBorovuk/Vue-trips"
+        }
+      },
+      {
+        "id": 8,
+        "title": "Blog with authorization on React.js",
+        "stars": 5,
+        "preview": "https://blog.codemagic.io/uploads/2019/10/Codemagic-io_Blog_Firebase-Auth-with-Flutter.png",
+        "description": {
+          "titleDesc": "Blog with authorization on React.js",
+          "textDesc": "In this work, firebase is connected to authorize the client to access the main page. Which displays information about employees. A map is also available in the panel.",
+          "skillsDesc": [
+            {
+              "id": 131,
+              "item": "React.js"
+            },
+            {
+              "id": 132,
+              "item": "Redux-saga"
+            },
+            {
+              "id": 133,
+              "item": "React-hooks"
+            },
+            {
+              "id": 134,
+              "item": "Auth"
+            },
+            {
+              "id": 135,
+              "item": "Google Maps"
+            },
+            {
+              "id": 136,
+              "item": "SCSS"
+            }
+          ]
+        },
+        "link": {
+          "demo": "https://authorized-react.web.app/",
+          "code": "https://github.com/VadimBorovuk/Auth-React-Redux-saga-Blog"
         }
       }
     ],
@@ -112,23 +354,23 @@
     "timelineData": [
       {
         "id": 7,
-        "position": "frontend courses",
+        "position": "Frontend courses",
         "dateStarted": "2018-2019",
-        "description": "destiny HTML",
+        "description": "Create landing pages and websites using HTML & CSS Learning the basics of JavaScript, applying various types of tasks on a project, related to the functionality of the Es6 syntax. Connecting to the project Webpack collector for code optimization. General acquaintance with React, Vue, Angular frameworks. Building a single page app, cars information blog. The ability to create, view, change and delete cards with information about the cars.",
         "colorStyle": "#26e730"
       },
       {
         "id": 8,
         "position": "Junior Frontend / HTML Coder",
         "dateStarted": "2019-2020",
-        "description": "destiny HTML",
+        "description": "Layout of full-fledged websites and landing pages for exhibitions in different countries. Creating new, as well as changing existing projects. Addition of functionality, data processing, redesign. Bug fixes. In my work I used the following stack of technologies: HTML5, CSS3 (SCSS, SASS), JS (JQuery), Webpack, Gulp, Bootsrap 3,4, PHP, OpenServer, Photoshop, Figma, Adobe XD.",
         "colorStyle": "#2c98f0"
       },
       {
         "id": 9,
-        "position": "Frontend Developer (React.js, Vue.js, Angular.js)",
+        "position": "Frontend Developer (React.js, Vue.js)",
         "dateStarted": "2020-2021",
-        "description": "destiny REACT",
+        "description": "Layout of single-page applications, addition and redesign of components Routing, filtering, sorting, search, data processing, form submission, UI optimization. For use the store, I used the Redux & Vuex libraries. For use the database, I am using mySql.  Connecting payment platforms to the site.  The problem statement is described in the Jira program, a number of which are carried out using the Agile methodology. Working with the admin panel to create data corrections.",
         "colorStyle": "#e17608"
       }
     ]

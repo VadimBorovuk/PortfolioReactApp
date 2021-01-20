@@ -27,7 +27,10 @@
     }
 
     &:hover:after {
-      background: radial-gradient(black, rgba(22, 170, 117, .4));
+      background: radial-gradient(#1a98753d, #1a98753d);
+      .title-block{
+        display: none;
+      }
     }
 
 
@@ -39,11 +42,15 @@
       z-index: 2;
       transition: cubic-bezier(1, 0.22, 0, 1.57) 0.3s;
       padding-left: 15px;
+      width: 100%;
+      text-align: left;
+      height: 60px;
+      line-height: 25px;
     }
 
   }
 
-  .rating-starts{
+  .rating-starts {
     height: 35px;
     background-color: #fff;
     width: 100%;
@@ -72,15 +79,46 @@
         width: 60px;
         line-height: 45px;
         margin-right: 10px;
-        &:hover{
+
+        &:hover {
           color: #ffffff;
         }
       }
     }
-    .modal-content{
-      padding: 55px 20px;
-      height: 500px;
+
+    .modal-content {
+      font-family: 'Mukta Malar', sans-serif;
+      padding: 55px 20px 0;
+      max-width: 430px;
+
+      .desc-title {
+        font-size: 30px;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+
+      .desc-text {
+        font-size: 18px;
+        color: #555f5e;
+      }
+
+      .desc-lists {
+        padding-left: 15px;
+
+        p {
+          font-size: 18px;
+          font-weight: bold;
+          text-decoration: underline;
+          margin: 0 0 10px;
+        }
+
+        .desc-list {
+          font-size: 16px;
+          list-style-type: disc !important;
+        }
+      }
     }
+
     .modal-footer {
       position: absolute;
       bottom: 0;
@@ -90,7 +128,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      .modal-footer-link{
+
+      .modal-footer-link {
         font-size: 22px;
         font-weight: 500;
         color: #ffffff;
@@ -102,7 +141,8 @@
         align-items: center;
         text-transform: uppercase;
         transition: all .4s;
-        &:hover{
+
+        &:hover {
           background: rgba(255, 255, 255, .6);
           color: #000000;
         }

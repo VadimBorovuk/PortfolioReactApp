@@ -25,7 +25,6 @@ class ButtonSend extends React.Component {
                 <a className="btn modal-trigger" data-target="modal-send">
                     send me
                 </a>
-
                 <div ref={Modal => {
                     this.Modal = Modal
                 }}
@@ -43,6 +42,7 @@ class ButtonSend extends React.Component {
             </div>
         )
     }
+
 }
 
 export default ButtonSend;

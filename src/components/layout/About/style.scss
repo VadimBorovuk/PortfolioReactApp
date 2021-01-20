@@ -1,4 +1,6 @@
 .about-block {
+  z-index: 99;
+  position: relative;
   .about-block-title {
     text-align: center;
     font-size: 46px;

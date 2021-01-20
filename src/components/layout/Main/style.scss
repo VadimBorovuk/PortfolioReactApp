@@ -8,7 +8,12 @@
   /*slick slider*/
   .slick-slider{
     min-height: 100vh;
+    .slick-current{
+      position: relative;
+      z-index: 9999;
+    }
   }
+
   .slider-text-inner {
     padding: 2.5em;
 

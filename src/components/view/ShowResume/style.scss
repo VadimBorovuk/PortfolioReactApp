@@ -1,0 +1,57 @@
+.modal-showResume {
+  position: relative;
+
+  #modal-resume {
+    min-height: 170px;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(177.76deg, #2e4b3b, #002e33);
+    border-radius: 5px;
+    border: 0;
+
+    .modal-header {
+      position: absolute;
+      right: 0;
+      top: -7px;
+
+      .modal-close {
+        color: #fff;
+        font-size: 36px;
+        right: 4px;
+        padding: 0;
+      }
+    }
+
+    .modal-content {
+      text-align: center;
+      min-height: 170px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .block-btn{
+        display: flex;
+        min-width: 130px;
+        justify-content: space-evenly;
+        .btn-resume{
+          min-width: 50px;
+          height: 30px;
+          cursor: pointer;
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: bold;
+          border: 2px solid #00acc1;
+          background-color: #535151;
+          color: #ffffff;
+        }
+      }
+      .btn-resume-title {
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: bold;
+      }
+    }
+  }
+
+}

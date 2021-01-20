@@ -3,12 +3,17 @@
   .desc-cards{
     .cards{
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       flex-wrap: wrap;
+      .card-rating{
+        display: flex;
+        flex-direction: column;
+      }
+
       .card{
         &.col-4{
           width: 250px;
-          height: 190px;
+          height: 220px;
           background-color: #fff;
         }
       }
