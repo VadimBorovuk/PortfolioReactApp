@@ -14,10 +14,10 @@ const FormSend = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const [error, setError] = useState('The field must have at min 2 symbols');
+    const [error, setError] = useState('All fields must be filled correctly');
     const [showErr, setShowErr] = useState("hide")
 
-    const [errEmail, setErrEmail] = useState('You must write correct email. Example: test@test.com')
+    const [errEmail, setErrEmail] = useState('You must fill correctly email. Example: test@test.com')
     const [showErrEmail, setShowErrEmail] = useState("hide")
 
     const [open, setOpen] = useState(false);
