@@ -8,7 +8,7 @@
     top: -375px !important;
     left: 0;
     width: 390px;
-    min-height: 400px;
+    min-height: 450px;
     overflow: hidden;
     background: rgba(0,0,0,.8);
     padding: 10px;
@@ -44,6 +44,29 @@
       input{
         color: #ffffff;
       }
+    }
+  }
+  .err-field{
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    text-align: left;
+    background: #c82121;
+    font-weight: 300;
+    padding: 3px 3px;
+
+    &.err-field-hide{
+      display: none;
+    }
+    &.err-field-show{
+      display: block;
+    }
+
+    &.err-email-hide{
+      display: none;
+    }
+    &.err-email-show{
+      display: block;
     }
   }
 }

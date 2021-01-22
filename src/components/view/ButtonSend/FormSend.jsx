@@ -14,18 +14,34 @@ const FormSend = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
+    const [error, setError] = useState('The field must have at min 3 symbols');
+    const [showErr, setShowErr] = useState("hide")
+
+    const [errEmail, setErrEmail] = useState('You must write correct email. Example: test@test.com')
+    const [showErrEmail, setShowErrEmail] = useState("hide")
 
     const [open, setOpen] = useState(false);
 
     const handleClick = (e) => {
-
-
-
-        setOpen(true);
         e.preventDefault()
-        setName('')
-        setEmail('')
-        setMessage('')
+        let regExp = /([\w-\.]+)@((?:[\w]+\.)+)([a-zA-Z]{2,4})/;
+        if (regExp.test(email)) {
+            setOpen(true);
+            setName('')
+            setEmail('')
+            setMessage('')
+
+            setError('')
+            setErrEmail('')
+            setTimeout(()=>{
+                window.location.reload(true)
+            },1000)
+
+        }else{
+            setShowErr('block')
+            setShowErrEmail('block')
+        }
+
     };
 
     const handleClose = () => {
@@ -40,19 +56,22 @@ const FormSend = () => {
                         <i className="material-icons prefix">account_circle</i>
                         <label className="active" htmlFor="first_name2">First Name</label>
                         <input id="first_name2" type="text" onChange={e => setName(e.target.value)} value={name}
-                               className="validate"/>
+                               className="validate" required/>
+                        <span className={`err-field err-field-${showErr}`}>{error}</span>
                     </div>
                     <div className="input-field col s12">
                         <i className="material-icons prefix">email</i>
                         <label htmlFor="email">Email</label>
                         <input id="email" type="email" onChange={e => setEmail(e.target.value)} value={email}
-                               className="validate"/>
+                               className="validate" required/>
+                        <span className={`err-field err-email-${showErrEmail}`}>{errEmail}</span>
                     </div>
                     <div className="input-field col s12">
                         <i className="material-icons prefix">mode_edit</i>
                         <label htmlFor="message">Message</label>
                         <input id="message" type="text" onChange={e => setMessage(e.target.value)} value={message}
-                               className="validate"/>
+                               className="validate" required/>
+                        <span className={`err-field err-field-${showErr}`}>{error}</span>
                     </div>
                 </div>
                 <div className="row">

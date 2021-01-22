@@ -37,7 +37,7 @@ const App = () => {
                 <section className="main-content">
                     {dataArr && dataArr.map((arr, index) => {
                         return (
-                            <div key={index}>
+                            <div className="slider-boxes" key={index}>
                                 <Route exact path="/"><Main timelineArr={arr.timelineData}/></Route>
                                 <Route path="/my-projects">
                                     <GalleryProjects

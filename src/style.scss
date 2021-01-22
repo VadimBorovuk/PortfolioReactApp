@@ -15,9 +15,12 @@
     width: calc(100% - 400px);
     float: right;
     min-height: 100vh;
+    height: 100%;
     overflow: hidden;
     position: relative;
-
+    .slider-boxes{
+      min-height: 100vh;
+    }
     &.slider-content {
       background: url("./assets/images/business.jpg") no-repeat center;
 

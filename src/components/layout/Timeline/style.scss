@@ -85,21 +85,35 @@
 
       .description-position-date {
         margin: 0 0 20px;
-        display: flex;
-        align-items: center;
+        display: inline-block;
+        position: relative;
+        &:after{
+          content: "";
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: -5px;
+          height: 2px;
+          background-color: #000;
+        }
 
         .description-position {
           font-size: 24px;
           color: #000000;
           margin-right: 20px;
           text-transform: uppercase;
-          text-decoration: underline;
+          letter-spacing: 1px;
+          font-weight: bold;
         }
 
         .description-date {
           font-size: 18px;
           color: #808080;
         }
+
+      }
+      .description-text{
+        font-size: 20px;
       }
     }
   }
