@@ -14,7 +14,7 @@ const FormSend = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const [error, setError] = useState('The field must have at min 3 symbols');
+    const [error, setError] = useState('The field must have at min 2 symbols');
     const [showErr, setShowErr] = useState("hide")
 
     const [errEmail, setErrEmail] = useState('You must write correct email. Example: test@test.com')
@@ -75,7 +75,7 @@ const FormSend = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <Button disabled={name.length < 1 || email.length < 1 || message.length < 1} variant="outlined"
+                    <Button disabled={name.length < 2 || email.length < 2 || message.length < 2} variant="outlined"
                             onClick={handleClick} id="sendForm"
                             className="btn waves-effect waves-light" type="submit"
                             name="action">
