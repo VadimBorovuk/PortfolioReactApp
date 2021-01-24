@@ -6,18 +6,44 @@
   background: url("../../../assets/images/navbar-toolbar.jpg") center repeat-y;
   background-size: cover;
   z-index: 1;
-  //z-index: 99999;
-  //position: relative;
+
   .text-center {
     .author-logo {
-      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 200px;
+      height: 200px;
       border-radius: 50%;
-      border: 1px solid #fff;
-      margin: 10px auto;
-      background: url('../../../assets/images/image.jpg');
-      background-size: cover;
+      background-color: #fff;
+      margin: 0 auto;
+      animation-name: color;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+
+      img {
+        height: 190px;
+        width: 190px;
+        border-radius: 50%;
+      }
     }
+
+
+    @keyframes color {
+      0% {
+        background-color: #fff;
+      }
+      33% {
+        background-color: #7579ff;
+      }
+      66% {
+        background-color: #1af6e1;
+      }
+      100% {
+        background-color: #fff;
+      }
+    }
+
 
     .author-fullInfo {
       p {
@@ -62,14 +88,21 @@
       box-shadow: none;
       list-style: none;
       text-align: center;
+      padding-left: 30px;
 
       li {
-        display: inline-block;
+        display: flex;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: center;
+        letter-spacing: 2px;
+        width: 100%;
 
         .nav-link {
           font-size: 16px;
+          width: 100%;
           height: 40px;
-          line-height: 40px;
+          line-height: 32px;
           position: relative;
           display: block;
           padding: 0;
@@ -79,7 +112,11 @@
           text-transform: uppercase;
           margin: 0 10px;
           transition: all .5s;
-
+          .fas{
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+          }
           &:hover {
             color: #fff;
             background-color: transparent;
@@ -99,7 +136,8 @@
             background-color: #fff;
           }
         }
-        .active-link{
+
+        .active-link {
           color: #1af6e1;
           font-weight: bold;
           font-size: 18px;
@@ -121,6 +159,7 @@
       a {
         color: #ffffff;
         font-size: 23px;
+
         .fab {
           transition: .3s all;
 
@@ -150,6 +189,8 @@
     &:hover {
       background: rgba(0, 0, 0, .5);
       cursor: pointer;
+      border: 2px solid #1af6e1;
+      transform: scale(1.1);
     }
 
     .fa-file {
@@ -168,7 +209,7 @@ nav.fill ul li a {
 nav.stroke ul li a:after,
 nav.fill ul li a:after {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   right: 0;
   margin: auto;

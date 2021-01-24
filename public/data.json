@@ -222,7 +222,7 @@
         "id": 8,
         "title": "Blog with authorization on React.js",
         "stars": 5,
-        "preview": "https://blog.codemagic.io/uploads/2019/10/Codemagic-io_Blog_Firebase-Auth-with-Flutter.png",
+        "preview": "https://blog.codemagic.io/uploads/Codemagic-io_Blog_Power-of-MacPros.png",
         "description": {
           "titleDesc": "Blog with authorization on React.js",
           "textDesc": "In this work, firebase is connected to authorize the client to access the main page. Which displays information about employees. A map is also available in the panel.",
@@ -256,6 +256,38 @@
         "link": {
           "demo": "https://authorized-react.web.app/",
           "code": "https://github.com/VadimBorovuk/Auth-React-Redux-saga-Blog"
+        }
+      },
+      {
+        "id": 9,
+        "title": "My first sitePortfolio",
+        "stars": 5,
+        "preview": "https://i0.wp.com/blogpascher.com/wp-content/uploads/2018/04/Avoir-themes-wordpress-creer-site-internet-portfolio-video.gif?fit=800%2C411&ssl=1",
+        "description": {
+          "titleDesc": "My first sitePortfolio",
+          "textDesc": "Show my demo and code versions",
+          "skillsDesc": [
+            {
+              "id": 191,
+              "item": "HTML"
+            },
+            {
+              "id": 192,
+              "item": "CSS"
+            },
+            {
+              "id": 193,
+              "item": "JS"
+            },
+            {
+              "id": 194,
+              "item": "Jquery"
+            }
+          ]
+        },
+        "link": {
+          "demo": "https://vadimborovuk.github.io/sitePortfolio/",
+          "code": "https://github.com/VadimBorovuk/sitePortfolio"
         }
       }
     ],

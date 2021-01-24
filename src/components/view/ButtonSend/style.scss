@@ -2,7 +2,12 @@
   position: relative;
   text-align: center;
   margin: 0 0 30px;
-
+  .modal-trigger{
+    transition: .4s all;
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
   .modal-send-view {
     position: absolute;
     top: -375px !important;

@@ -14,8 +14,8 @@ export default class Carusel extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
-            autoplay: false,
-            autoplaySpeed: 5000,
+            autoplay: true,
+            autoplaySpeed: 9000,
         };
         const {timelineArr} = this.props;
         return (
