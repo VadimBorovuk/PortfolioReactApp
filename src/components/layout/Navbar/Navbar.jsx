@@ -5,11 +5,18 @@ import {Animated} from "react-animated-css";
 
 import ButtonSend from "../../view/ButtonSend/ButtonSend";
 import ShowResume from "../../view/ShowResume/ShowResume";
-import avatar from "../../../assets/images/image.jpg";
+import avatar from "../../../assets/images/image.png";
+import {useTranslation} from "react-i18next";
 
 import './style.scss';
 
 const Navbar = () => {
+    const {t, i18n} = useTranslation();
+
+    const changeLanguage = (language) =>{
+        i18n.changeLanguage(language)
+    }
+
     return (
         <div className="navbar-view">
             <Animated animationIn="fadeInDownBig" animationOut="pulse" isVisible={true}>
@@ -17,13 +24,19 @@ const Navbar = () => {
                     <div className="author-logo">
                         <img src={avatar} alt="avatar-image"/>
                     </div>
+                    <p>
+                        {t("testData")}
+                    </p>
                     <div className="author-fullInfo">
                         <p className="author-fullName">Vadim Borovuk</p>
                         <a href="mailto:borowik.vadim@gmail.com" className="author-email">borowik.vadim@gmail.com</a>
                     </div>
                 </div>
             </Animated>
-
+            <div>
+                <button onClick={()=>changeLanguage('ru')}>Ru</button>
+                <button onClick={()=>changeLanguage('en')}>En</button>
+            </div>
             <Animated animationIn="fadeInDownBig" animationOut="pulse" isVisible={true}>
                 <nav className="nav-links stroke">
                     <ul>

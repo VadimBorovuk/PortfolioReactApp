@@ -13,6 +13,7 @@ import {requestData} from "./redux/actions/data";
 
 import './style.scss';
 import Switch from "@material-ui/core/Switch";
+import LanguageView from "./components/layout/LanguageView/LanguageView";
 
 const App = () => {
     const urlData = "/data.json";
@@ -48,6 +49,7 @@ const App = () => {
                                         skillsArr={arr.skillsData}
                                         isLoadingSkills={isLoading}
                                     /></Route>
+                                {/*<Route path="/"><LanguageView/></Route>*/}
                             </div>
                         )
                     })}
