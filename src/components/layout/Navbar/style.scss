@@ -6,7 +6,24 @@
   background: url("../../../assets/images/navbar-toolbar.jpg") center repeat-y;
   background-size: cover;
   z-index: 1;
-
+  .boxes-language{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto 15px;
+    max-height: 30px;
+    max-width: 200px;
+    .boxes-lan-item{
+      width: 30px;
+      cursor: pointer;
+      border: 2px solid gold;
+      border-radius: 50%;
+      transition: all .4s;
+      &:hover{
+        border: 2px solid #5126a6;
+        border-radius: 50%;
+      }
+    }
+  }
   .text-center {
     .author-logo {
       display: flex;
@@ -75,7 +92,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 130px;
+    min-height: 120px;
     background-color: transparent;
     box-shadow: none;
 
@@ -153,7 +170,7 @@
     margin-top: 0;
 
     .author-link {
-      margin: 10px auto;
+      margin: 5px auto;
       font-family: 'Quicksand', sans-serif;
 
       a {

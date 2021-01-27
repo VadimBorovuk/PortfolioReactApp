@@ -1,48 +1,37 @@
-import React from 'react';
-import M from "materialize-css";
+import React, {useEffect, useState} from 'react';
 
 import FormSend from "./FormSend";
 
 import './style.scss';
+import {useTranslation} from "react-i18next";
 
-class ButtonSend extends React.Component {
-    componentDidMount() {
-        const options = {
-            inDuration: 250,
-            outDuration: 250,
-            opacity: 0.5,
-            dismissible: false,
-            startingTop: "4%",
-            endingTop: "10%"
-        };
-        M.Modal.init(this.Modal, options);
+const ButtonSend = () => {
+    const [openModal, setOpenModal] = useState(false)
 
+    const changeStatusModal = ()=>{
+        setOpenModal(!openModal)
     }
+    const {t} = useTranslation();
 
-    render() {
-        return (
-            <div className="modal-sendMe">
-                <a className="btn modal-trigger" data-target="modal-send">
-                    send me
-                </a>
-                <div ref={Modal => {
-                    this.Modal = Modal
-                }}
-                     id="modal-send"
-                     className="modal modal-send-view">
-                    <div className="modal-header">
-                        <a className="modal-close waves-effect btn-flat">
-                            &times;
-                        </a>
-                    </div>
-                    <div className="modal-content">
-                        <FormSend/>
-                    </div>
+    return (
+        <div className="modal-sendMe">
+            <button className="btn" onClick={()=>changeStatusModal()}>
+                {t("sendBtn")}
+            </button>
+            <div
+                 id="modal-send"
+                 className={`modal-send-view send-view-${openModal}`}>
+                <div className="modal-header">
+                    <button className="close-btn" onClick={()=>setOpenModal(false)}>
+                        &times;
+                    </button>
+                </div>
+                <div className="modal-content">
+                    <FormSend/>
                 </div>
             </div>
-        )
-    }
-
+        </div>
+    )
 }
 
 export default ButtonSend;

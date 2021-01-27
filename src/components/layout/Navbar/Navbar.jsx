@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {NavLink} from "react-router-dom";
 import {Animated} from "react-animated-css";
@@ -8,12 +8,17 @@ import ShowResume from "../../view/ShowResume/ShowResume";
 import avatar from "../../../assets/images/image.png";
 import {useTranslation} from "react-i18next";
 
+import logoUa from '../../../assets/icons/ukraine.svg';
+import logoRu from '../../../assets/icons/russia.svg';
+import logoEn from '../../../assets/icons/united-states.svg';
+
 import './style.scss';
 
 const Navbar = () => {
+    const [activeLink , setActiveLink] = useState(false)
     const {t, i18n} = useTranslation();
 
-    const changeLanguage = (language) =>{
+    const changeLanguage = (language) => {
         i18n.changeLanguage(language)
     }
 
@@ -24,39 +29,48 @@ const Navbar = () => {
                     <div className="author-logo">
                         <img src={avatar} alt="avatar-image"/>
                     </div>
-                    <p>
-                        {t("testData")}
-                    </p>
                     <div className="author-fullInfo">
-                        <p className="author-fullName">Vadim Borovuk</p>
+                        <p className="author-fullName">{t("fullName")}</p>
                         <a href="mailto:borowik.vadim@gmail.com" className="author-email">borowik.vadim@gmail.com</a>
                     </div>
                 </div>
             </Animated>
-            <div>
-                <button onClick={()=>changeLanguage('ru')}>Ru</button>
-                <button onClick={()=>changeLanguage('en')}>En</button>
-            </div>
+            <Animated animationIn="fadeInDownBig" animationOut="pulse" isVisible={true}>
+                <div className="boxes-language">
+                    <img
+                        onClick={() => changeLanguage('en')}
+                        className="boxes-lan-item"
+                        src={logoEn} alt="logoEn"/>
+                    <img
+                        onClick={() => changeLanguage('uk')}
+                        className="boxes-lan-item"
+                        src={logoUa} alt="logoUa"/>
+                    <img
+                        onClick={() => changeLanguage('ru')}
+                        className="boxes-lan-item"
+                        src={logoRu} alt="logoRu"/>
+                </div>
+            </Animated>
             <Animated animationIn="fadeInDownBig" animationOut="pulse" isVisible={true}>
                 <nav className="nav-links stroke">
                     <ul>
                         <li>
                             <NavLink exact to="/" className="nav-link" activeClassName="active-link">
                                 <i className="fas fa-home"></i>
-                                <span>MAIN</span>
+                                <span>{t("linkMain")}</span>
                             </NavLink>
                         </li>
                         <li>
 
                             <NavLink to="/my-projects" className="nav-link" activeClassName="active-link">
                                 <i className="fas fa-archive"></i>
-                                <span>My Projects</span>
+                                <span>{t("linkProject")}</span>
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/skills" className="nav-link" activeClassName="active-link">
                                 <i className="fas fa-atom"></i>
-                                <span>Skills</span>
+                                <span>{t("linkSkills")}</span>
                             </NavLink>
                         </li>
                     </ul>

@@ -1,4 +1,25 @@
-
 {
-  "testData": "new data"
+  "fullName": "Vadim Borovuk",
+  "linkMain": "Main",
+  "linkProject": "My Projects",
+  "linkSkills": "My skills",
+  "sendBtn": "Send me",
+  "formNameField": "First Name",
+  "formEmailField": "Email",
+  "formMessageField": "Message",
+  "modalSendBtn": "Send",
+  "successMessage": "This is a success message!",
+  "showResume": "Show CV",
+  "showCvTitle": "Choose your version",
+
+  "viewProjectsTitle": "Welcome to \n my site portfolio",
+  "viewProjectsLink": "View Projects",
+
+  "aboutMeTitle" : "About me",
+  "aboutMeDesc" : "I really enjoy learning something new and interesting. I want to be part of a team focused on innovation and challenging challenges. I want to get a position as Front-end developer ReactJS or Vue.js position. Conducting courses in English. Interesting projects and development in the company.I love traveling, reading books, listening to music, which inspires new ideas.",
+
+
+  "myProjectsTitle": "My projects",
+  "timelineTitle": "TimeLine",
+  "skillsTitle": "Technical skills"
 }

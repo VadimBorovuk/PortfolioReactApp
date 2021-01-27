@@ -49,7 +49,7 @@ const App = () => {
                                         skillsArr={arr.skillsData}
                                         isLoadingSkills={isLoading}
                                     /></Route>
-                                {/*<Route path="/"><LanguageView/></Route>*/}
+                               <Redirect path="*" to='/'/>
                             </div>
                         )
                     })}

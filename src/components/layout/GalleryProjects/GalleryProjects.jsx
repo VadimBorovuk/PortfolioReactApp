@@ -1,19 +1,19 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import ModalView from "../../view/ModalView/ModalView";
 import Loader from "../../view/Loader/Loading";
+import {Animated} from "react-animated-css";
+import {useTranslation} from "react-i18next";
 
 import './style.scss'
-import {Animated} from "react-animated-css";
 
 const GalleryProjects = ({projectsArr, isLoadingProjects}) => {
+    const {t} = useTranslation();
     return (
         <div className="main-block content-projects">
             <div className="block-content-info">
                 <Animated animationIn="fadeInDownBig" animationOut="pulse" isVisible={true}>
-                    <h2 className="content-text-title title-projects">
-                        My projects
-                    </h2>
+                    <h2 className="content-text-title title-projects">{t('myProjectsTitle')}</h2>
                 </Animated>
                 <div className="desc desc-cards">
                     <Animated animationIn="fadeInUpBig" animationOut="pulse" isVisible={true}>

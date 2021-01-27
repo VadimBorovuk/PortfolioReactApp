@@ -2,7 +2,9 @@
   position: relative;
   z-index: 99990;
 }
-
+.viewTitleProjects{
+  max-width: 500px;
+}
 .btn-learn {
   cursor: pointer;
   transition: all .4s;

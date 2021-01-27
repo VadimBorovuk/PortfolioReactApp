@@ -39,15 +39,15 @@
 
     }
 
-    //&:after {
-    //  content: "";
-    //  position: absolute;
-    //  top: 0;
-    //  left: 0;
-    //  background: rgba(0, 0, 0, .6);
-    //  height: 100%;
-    //  width: 100%;
-    //}
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, .6);
+      height: 100%;
+      width: 100%;
+    }
 
     .main-block,
     .slider-text-inner {

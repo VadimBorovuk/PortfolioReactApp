@@ -4,6 +4,7 @@ import Carusel from "../../view/Slider/Slider";
 import './style.scss';
 
 const Main = ({timelineArr}) => {
+
     return (
         <div className="main-block slider-content">
             <Carusel timelineArr={timelineArr}/>

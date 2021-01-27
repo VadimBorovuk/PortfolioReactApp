@@ -2,37 +2,54 @@
   position: relative;
   text-align: center;
   margin: 0 0 30px;
-  .modal-trigger{
+
+  .modal-trigger {
     transition: .4s all;
-    &:hover{
+
+    &:hover {
       transform: scale(1.1);
     }
   }
+
   .modal-send-view {
     position: absolute;
     top: -375px !important;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 390px;
-    min-height: 450px;
     overflow: hidden;
-    background: rgba(0,0,0,.8);
-    padding: 10px;
+    background: rgba(0, 0, 0, .8);
+    max-height: 0;
+    z-index: -1;
+    transition: max-height cubic-bezier(0.2,-2,0.8,2) .3s;
+    &.send-view-true {
+      z-index: 1;
+      max-height: 480px;
+    }
+
+    &.send-view-false {
+      max-height: 0;
+      z-index: -1;
+    }
   }
-  .modal-header{
+
+  .modal-header {
     position: absolute;
     right: 0;
     top: -7px;
-    a{
-      font-size: 45px;
-      padding: 0;
-      font-weight: 500;
-      &:hover{
-        color: #ffffff;
-      }
+
+    .close-btn {
+      border: 0;
+      background: transparent;
+      color: #fff;
+      font-size: 3rem;
+      cursor: pointer;
     }
   }
-  .modal-content{
-    #sendForm{
+
+  .modal-content {
+    padding: 60px 20px;
+    #sendForm {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -42,16 +59,18 @@
       color: #ffffff;
     }
 
-    .input-field{
-      .prefix{
+    .input-field {
+      .prefix {
         color: #ffffff;
       }
-      input{
+
+      input {
         color: #ffffff;
       }
     }
   }
-  .err-field{
+
+  .err-field {
     color: #fff;
     font-size: 15px;
     display: flex;
@@ -60,17 +79,19 @@
     font-weight: 300;
     padding: 3px 3px;
 
-    &.err-field-hide{
+    &.err-field-hide {
       display: none;
     }
-    &.err-field-show{
+
+    &.err-field-show {
       display: block;
     }
 
-    &.err-email-hide{
+    &.err-email-hide {
       display: none;
     }
-    &.err-email-show{
+
+    &.err-email-show {
       display: block;
     }
   }
